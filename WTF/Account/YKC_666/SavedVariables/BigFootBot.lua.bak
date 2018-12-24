@@ -1,0 +1,167 @@
+
+ItemSourceDB = {
+}
+ObjectLocationDB = {
+}
+CreatureLocationDB = {
+}
+CreatureDB = {
+}
+QuestDB = {
+}
+QuestCompleteDB = {
+}
+QuestEventDB = {
+}
+SkillSourceDB = {
+}
+BigFootBot_Version = {
+}
+BigFootBot_Info = nil
+PlayersDB = {
+	["久微丶:克尔苏加德"] = {
+		["race"] = 4,
+		["name"] = "久微丶",
+		["guild"] = "影踪派",
+		["level"] = 120,
+		["gender"] = 2,
+		["class"] = 3,
+		["server"] = "克尔苏加德",
+	},
+	["蠢萌小师父:白银之手"] = {
+		["race"] = 6,
+		["name"] = "蠢萌小师父",
+		["guild"] = "Aibou",
+		["level"] = 120,
+		["gender"] = 3,
+		["class"] = 9,
+		["server"] = "白银之手",
+	},
+	["陈筱米:自由之风"] = {
+		["race"] = 7,
+		["name"] = "陈筱米",
+		["guild"] = "放你去浪",
+		["level"] = 120,
+		["gender"] = 2,
+		["class"] = 12,
+		["server"] = "自由之风",
+	},
+	["轧辊磨床:图拉扬"] = {
+		["race"] = 6,
+		["name"] = "轧辊磨床",
+		["guild"] = "众神之约",
+		["level"] = 120,
+		["gender"] = 3,
+		["class"] = 9,
+		["server"] = "图拉扬",
+	},
+	["丶有邪气:血色十字军"] = {
+		["race"] = 4,
+		["name"] = "丶有邪气",
+		["guild"] = "Menzerna",
+		["level"] = 120,
+		["gender"] = 3,
+		["class"] = 9,
+		["server"] = "血色十字军",
+	},
+	["清照高闲:血色十字军"] = {
+		["race"] = 4,
+		["name"] = "清照高闲",
+		["guild"] = "似曾相识",
+		["level"] = 120,
+		["gender"] = 3,
+		["class"] = 12,
+		["server"] = "血色十字军",
+	},
+}
+UtilDB = {
+	["M"] = {
+		["NumSysUnread"] = 0,
+		["MD5"] = "4278578878237239574237698905803546789229",
+		["NumNormalRead"] = 0,
+		["NumSysRead"] = 0,
+		["NumNormalUnread"] = 4,
+	},
+}
+NPCMarkCollectionDB = {
+}
+BigFootBot_collectData = {
+	["CombatBattlePetData"] = {
+		["布鲁斯"] = {
+			["PetType"] = 9,
+			["enemyPetType"] = 10,
+			["StyPetType"] = "水栖",
+			["name"] = "布鲁斯",
+			["health"] = 1952,
+			["speed"] = 341,
+			["speciesName"] = "布鲁斯",
+			["level"] = 25,
+			["maxHealth"] = 1952,
+			["attack"] = 289,
+		},
+		["小型扭曲涡流"] = {
+			["PetType"] = 9,
+			["enemyPetType"] = 9,
+			["StyPetType"] = "水栖",
+			["health"] = 1546,
+			["name"] = "小型扭曲涡流",
+			["speciesName"] = "小型扭曲涡流",
+			["speed"] = 301,
+			["level"] = 25,
+			["maxHealth"] = 1546,
+			["attack"] = 330,
+		},
+		["小白鲨"] = {
+			["PetType"] = 8,
+			["enemyPetType"] = 10,
+			["StyPetType"] = "野兽",
+			["name"] = "小白鲨",
+			["health"] = 1952,
+			["speed"] = 260,
+			["speciesName"] = "小白鲨",
+			["level"] = 25,
+			["maxHealth"] = 1952,
+			["attack"] = 370,
+		},
+		["精神扭曲者"] = {
+			["PetType"] = 6,
+			["enemyPetType"] = 9,
+			["StyPetType"] = "魔法",
+			["health"] = 1546,
+			["name"] = "精神扭曲者",
+			["speciesName"] = "精神扭曲者",
+			["speed"] = 341,
+			["level"] = 25,
+			["maxHealth"] = 1546,
+			["attack"] = 289,
+		},
+		["小型充能烈风"] = {
+			["PetType"] = 7,
+			["enemyPetType"] = 9,
+			["StyPetType"] = "元素",
+			["health"] = 1546,
+			["name"] = "小型充能烈风",
+			["speciesName"] = "小型充能烈风",
+			["speed"] = 301,
+			["level"] = 25,
+			["maxHealth"] = 1546,
+			["attack"] = 330,
+		},
+		["鱼饵"] = {
+			["PetType"] = 8,
+			["enemyPetType"] = 10,
+			["StyPetType"] = "野兽",
+			["name"] = "鱼饵",
+			["health"] = 1952,
+			["speed"] = 260,
+			["speciesName"] = "鱼饵",
+			["level"] = 25,
+			["maxHealth"] = 1952,
+			["attack"] = 370,
+		},
+	},
+	["WildBattlePetData"] = {
+	},
+}
+SpamChatDB = {
+}
