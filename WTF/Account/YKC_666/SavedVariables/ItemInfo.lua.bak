@@ -29,7 +29,7 @@ ItemInfo_Config = {
 			2, -- [3]
 		},
 	},
-	["ShowUnitPrice"] = false,
+	["ShowUnitPrice"] = true,
 	["bidprice"] = {
 	},
 }

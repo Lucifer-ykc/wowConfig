@@ -68,7 +68,6 @@ DBM_AllSavedOptions = {
 		["SpecialWarningSound"] = "Sound\\Spells\\PVPFlagTaken.ogg",
 		["HUDSize1"] = 5,
 		["UseSoundChannel"] = "Master",
-		["EventSoundMusic"] = "None",
 		["HelpMessageVersion"] = 3,
 		["RangeFrameRadarX"] = 400.000427246094,
 		["SpecialWarningDuration"] = 4,
@@ -79,6 +78,7 @@ DBM_AllSavedOptions = {
 		["RangeFrameY"] = -214.000228881836,
 		["ShowGuildMessages"] = true,
 		["EventSoundWipe"] = "None",
+		["EventSoundMusic"] = "None",
 		["NewsMessageShown"] = 4,
 		["HUDColor4"] = {
 			0, -- [1]

@@ -19,68 +19,23 @@ BigFootBot_Version = {
 }
 BigFootBot_Info = nil
 PlayersDB = {
-	["久微丶:克尔苏加德"] = {
-		["race"] = 4,
-		["name"] = "久微丶",
-		["guild"] = "影踪派",
+	["被追逐的宝贝:熊猫酒仙"] = {
+		["race"] = 19,
+		["name"] = "被追逐的宝贝",
+		["guild"] = "驾龄二十年以上",
 		["level"] = 120,
 		["gender"] = 2,
-		["class"] = 3,
-		["server"] = "克尔苏加德",
-	},
-	["蠢萌小师父:白银之手"] = {
-		["race"] = 6,
-		["name"] = "蠢萌小师父",
-		["guild"] = "Aibou",
-		["level"] = 120,
-		["gender"] = 3,
-		["class"] = 9,
-		["server"] = "白银之手",
-	},
-	["陈筱米:自由之风"] = {
-		["race"] = 7,
-		["name"] = "陈筱米",
-		["guild"] = "放你去浪",
-		["level"] = 120,
-		["gender"] = 2,
-		["class"] = 12,
-		["server"] = "自由之风",
-	},
-	["轧辊磨床:图拉扬"] = {
-		["race"] = 6,
-		["name"] = "轧辊磨床",
-		["guild"] = "众神之约",
-		["level"] = 120,
-		["gender"] = 3,
-		["class"] = 9,
-		["server"] = "图拉扬",
-	},
-	["丶有邪气:血色十字军"] = {
-		["race"] = 4,
-		["name"] = "丶有邪气",
-		["guild"] = "Menzerna",
-		["level"] = 120,
-		["gender"] = 3,
-		["class"] = 9,
-		["server"] = "血色十字军",
-	},
-	["清照高闲:血色十字军"] = {
-		["race"] = 4,
-		["name"] = "清照高闲",
-		["guild"] = "似曾相识",
-		["level"] = 120,
-		["gender"] = 3,
-		["class"] = 12,
-		["server"] = "血色十字军",
+		["class"] = 8,
+		["server"] = "熊猫酒仙",
 	},
 }
 UtilDB = {
 	["M"] = {
 		["NumSysUnread"] = 0,
-		["MD5"] = "4278578878237239574237698905803546789229",
-		["NumNormalRead"] = 0,
+		["MD5"] = "1891084883123534831771678600416906504",
+		["NumNormalRead"] = 4,
 		["NumSysRead"] = 0,
-		["NumNormalUnread"] = 4,
+		["NumNormalUnread"] = 0,
 	},
 }
 NPCMarkCollectionDB = {

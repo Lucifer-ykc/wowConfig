@@ -1,2 +1,0 @@
-
-DBMPartyBfa_SavedStats = nil

@@ -2298,6 +2298,15 @@ NameplateCooldownsAceDB = {
 					["cooldown"] = 210,
 					["texture"] = 135936,
 				},
+				["赤精之歌"] = {
+					["enabled"] = true,
+					["refSpellID"] = 198898,
+					["spellIDs"] = {
+						[198898] = true,
+					},
+					["cooldown"] = 15,
+					["texture"] = 332402,
+				},
 				["肾击"] = {
 					["enabled"] = true,
 					["refSpellID"] = 408,
@@ -2306,15 +2315,6 @@ NameplateCooldownsAceDB = {
 					},
 					["cooldown"] = 20,
 					["texture"] = 132298,
-				},
-				["绝望祷言"] = {
-					["enabled"] = true,
-					["refSpellID"] = 19236,
-					["spellIDs"] = {
-						[19236] = true,
-					},
-					["cooldown"] = 90,
-					["texture"] = 237550,
 				},
 				["奥术强化"] = {
 					["enabled"] = true,
@@ -2397,14 +2397,14 @@ NameplateCooldownsAceDB = {
 					["cooldown"] = 30,
 					["texture"] = 236170,
 				},
-				["赤精之歌"] = {
+				["绝望祷言"] = {
 					["enabled"] = true,
-					["refSpellID"] = 198898,
+					["refSpellID"] = 19236,
 					["spellIDs"] = {
-						[198898] = true,
+						[19236] = true,
 					},
-					["cooldown"] = 15,
-					["texture"] = 332402,
+					["cooldown"] = 90,
+					["texture"] = 237550,
 				},
 				["寒冰宝珠"] = {
 					["enabled"] = true,

@@ -1,3 +1,0 @@
-
-AutoEquip_EquipBindToTalent = {
-}

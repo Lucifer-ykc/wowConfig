@@ -1,3 +1,0 @@
-
-BigFootBar_Info = {
-}
