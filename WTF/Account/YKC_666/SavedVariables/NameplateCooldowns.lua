@@ -236,8 +236,8 @@ NameplateCooldownsDB = {
 			[108280] = true,
 			[195457] = true,
 			[781] = true,
-			[192058] = true,
 			[11876] = true,
+			[192058] = true,
 			[19577] = true,
 			[408] = true,
 			[207349] = true,
@@ -2253,15 +2253,6 @@ NameplateCooldownsAceDB = {
 					["cooldown"] = 180,
 					["texture"] = 135919,
 				},
-				["日光术"] = {
-					["enabled"] = true,
-					["refSpellID"] = 78675,
-					["spellIDs"] = {
-						[78675] = true,
-					},
-					["cooldown"] = 30,
-					["texture"] = 252188,
-				},
 				["禅意时刻"] = {
 					["enabled"] = true,
 					["refSpellID"] = 201325,
@@ -2280,14 +2271,23 @@ NameplateCooldownsAceDB = {
 					["cooldown"] = 110,
 					["texture"] = 135870,
 				},
-				["火箭弹幕"] = {
+				["黑暗模拟"] = {
 					["enabled"] = true,
-					["refSpellID"] = 69041,
+					["refSpellID"] = 77606,
 					["spellIDs"] = {
-						[69041] = true,
+						[77606] = true,
 					},
-					["cooldown"] = 120,
-					["texture"] = 133032,
+					["cooldown"] = 60,
+					["texture"] = 135888,
+				},
+				["幽灵视觉"] = {
+					["enabled"] = true,
+					["refSpellID"] = 188501,
+					["spellIDs"] = {
+						[188501] = true,
+					},
+					["cooldown"] = 30,
+					["texture"] = 1247266,
 				},
 				["痛苦压制"] = {
 					["enabled"] = true,
@@ -2298,6 +2298,15 @@ NameplateCooldownsAceDB = {
 					["cooldown"] = 210,
 					["texture"] = 135936,
 				},
+				["绝望祷言"] = {
+					["enabled"] = true,
+					["refSpellID"] = 19236,
+					["spellIDs"] = {
+						[19236] = true,
+					},
+					["cooldown"] = 90,
+					["texture"] = 237550,
+				},
 				["赤精之歌"] = {
 					["enabled"] = true,
 					["refSpellID"] = 198898,
@@ -2306,15 +2315,6 @@ NameplateCooldownsAceDB = {
 					},
 					["cooldown"] = 15,
 					["texture"] = 332402,
-				},
-				["肾击"] = {
-					["enabled"] = true,
-					["refSpellID"] = 408,
-					["spellIDs"] = {
-						[408] = true,
-					},
-					["cooldown"] = 20,
-					["texture"] = 132298,
 				},
 				["奥术强化"] = {
 					["enabled"] = true,
@@ -2397,14 +2397,14 @@ NameplateCooldownsAceDB = {
 					["cooldown"] = 30,
 					["texture"] = 236170,
 				},
-				["绝望祷言"] = {
+				["肾击"] = {
 					["enabled"] = true,
-					["refSpellID"] = 19236,
+					["refSpellID"] = 408,
 					["spellIDs"] = {
-						[19236] = true,
+						[408] = true,
 					},
-					["cooldown"] = 90,
-					["texture"] = 237550,
+					["cooldown"] = 20,
+					["texture"] = 132298,
 				},
 				["寒冰宝珠"] = {
 					["enabled"] = true,
@@ -2415,23 +2415,23 @@ NameplateCooldownsAceDB = {
 					["cooldown"] = 60,
 					["texture"] = 629077,
 				},
-				["幽灵视觉"] = {
+				["火箭弹幕"] = {
 					["enabled"] = true,
-					["refSpellID"] = 188501,
+					["refSpellID"] = 69041,
 					["spellIDs"] = {
-						[188501] = true,
+						[69041] = true,
+					},
+					["cooldown"] = 120,
+					["texture"] = 133032,
+				},
+				["日光术"] = {
+					["enabled"] = true,
+					["refSpellID"] = 78675,
+					["spellIDs"] = {
+						[78675] = true,
 					},
 					["cooldown"] = 30,
-					["texture"] = 1247266,
-				},
-				["黑暗模拟"] = {
-					["enabled"] = true,
-					["refSpellID"] = 77606,
-					["spellIDs"] = {
-						[77606] = true,
-					},
-					["cooldown"] = 60,
-					["texture"] = 135888,
+					["texture"] = 252188,
 				},
 				["致盲"] = {
 					["enabled"] = true,

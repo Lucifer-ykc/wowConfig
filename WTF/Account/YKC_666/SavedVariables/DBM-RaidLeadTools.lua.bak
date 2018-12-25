@@ -10,8 +10,8 @@ DBM_AutoInvite_Settings = {
 	["friends"] = true,
 	["promote_rank"] = 0,
 	["promote_all"] = false,
-	["guildmates"] = true,
 	["lastaoerank"] = 0,
+	["guildmates"] = true,
 	["other"] = false,
 }
 DBM_RaidLead_Settings = {

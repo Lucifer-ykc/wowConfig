@@ -89,7 +89,7 @@ do
 			groupfinder = {
 				enabled = true,
 				invasion_points = false, --deprecated
-				tracker_buttons = false,
+				tracker_buttons = true,
 				autoleave = false,
 				autoleave_delayed = false,
 				askleave_delayed = true,

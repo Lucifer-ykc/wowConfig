@@ -41,9 +41,9 @@
 --  Globals/Default Options  --
 -------------------------------
 DBM = {
-	Revision = tonumber(("$Revision: 18132 $"):sub(12, -3)),
-	DisplayVersion = "8.1.1", -- the string that is shown as version
-	ReleaseRevision = 18125 -- the revision of the latest stable version that is available
+	Revision = tonumber(("$Revision: 18141 $"):sub(12, -3)),
+	DisplayVersion = "8.1.2 alpha", -- the string that is shown as version
+	ReleaseRevision = 18134 -- the revision of the latest stable version that is available
 }
 DBM.HighestRelease = DBM.ReleaseRevision --Updated if newer version is detected, used by update nags to reflect critical fixes user is missing on boss pulls
 
@@ -153,7 +153,7 @@ DBM.DefaultOptions = {
 	HideObjectivesFrame = true,
 	HideGarrisonToasts = true,
 	HideGuildChallengeUpdates = true,
-	HideQuestTooltips = true,
+	HideQuestTooltips = false,		--bf@178.com
 	HideTooltips = false,
 	DisableSFX = false,
 	EnableModels = true,
@@ -3699,9 +3699,9 @@ do
 				end
 			end
             -- Check regular non-BNet friends
-            local nf = GetNumFriends()
+            local nf = C_FriendList.GetNumFriends()
 			for i = 1, nf do
-				local toonName = GetFriendInfo(i)
+				local toonName = C_FriendList.GetFriendInfoByIndex(i).name
 				if toonName == sender then
 					AcceptPartyInvite()
 					return
@@ -9179,7 +9179,7 @@ do
 		if not (optionName == false) then--Basically, all mods still using NewSound.
 			-- Because there are going to be users who update core and not old mods, we need to check and alert
 			--I'll try to avoid this as much as possible by removing NewSound from all old mods in advance of dbm core update
-			-- print("Error, NewSound depricated. Update your old DBM mods to remove this error")		--bf@178.com	7
+			-- print("Error, NewSound depricated. Update your old DBM mods to remove this error")		--bf@178.com	8
 			return
 		end
 		self.numSounds = self.numSounds and self.numSounds + 1 or 1

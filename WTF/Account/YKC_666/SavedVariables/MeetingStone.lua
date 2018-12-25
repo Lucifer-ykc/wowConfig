@@ -46,7 +46,6 @@ MEETINGSTONE_UI_DB = {
 			},
 			["ActivitiesData"] = {
 				["data"] = "$1$Z$S202`魔兽主播活动`战痕英雄的荣耀-上（联盟）`12月29日（周六）20点，战痕英雄的荣耀-上（联盟）*J出海前经历谷地风暴的洗礼，与提拉加德的强盗讨价还价，甚至大闹库尔提拉斯监狱，这一切都是为了证明你有资格得到这只特别的三叶虫，斗鱼TV：扶风西子（房间号：429842）会陪你左右与你并肩战斗，一起夺取属于联盟的荣耀。*J魔兽主播活动QQ交流群：603459231`http://w.163.com/special/convene-stone/`1`3$$",
-				["new"] = false,
 			},
 		},
 		["version"] = "80100.01",
@@ -57,17 +56,17 @@ MEETINGSTONE_UI_DB = {
 					["max"] = 0,
 					["enable"] = false,
 				},
-				["ItemLevel"] = {
-					["min"] = 0,
-					["max"] = 0,
-					["enable"] = false,
-				},
 				["Age"] = {
 					["min"] = 0,
 					["max"] = 0,
 					["enable"] = false,
 				},
 				["Members"] = {
+					["min"] = 0,
+					["max"] = 0,
+					["enable"] = false,
+				},
+				["ItemLevel"] = {
 					["min"] = 0,
 					["max"] = 0,
 					["enable"] = false,
@@ -79,17 +78,17 @@ MEETINGSTONE_UI_DB = {
 					["enable"] = false,
 					["max"] = 0,
 				},
-				["ItemLevel"] = {
-					["min"] = 0,
-					["enable"] = false,
-					["max"] = 0,
-				},
 				["Age"] = {
 					["min"] = 0,
 					["enable"] = false,
 					["max"] = 0,
 				},
 				["Members"] = {
+					["min"] = 0,
+					["enable"] = false,
+					["max"] = 0,
+				},
+				["ItemLevel"] = {
 					["min"] = 0,
 					["enable"] = false,
 					["max"] = 0,

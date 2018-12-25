@@ -563,7 +563,7 @@ if nil == Grail or Grail.versionNumber < Grail_File_Version then
 
 	if nil == CalendarGetDate then
 		CalendarGetDate = function()
-			local date = C_Calendar.GetDate();
+			local date = C_DateAndTime.GetCurrentCalendarTime();
 			return date.weekday, date.month, date.monthDay, date.year
 		end
 	end

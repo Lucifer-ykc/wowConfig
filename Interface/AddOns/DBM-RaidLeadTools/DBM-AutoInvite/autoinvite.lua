@@ -289,8 +289,8 @@ end
 do
 	local waitinginvites = {}
 	local function IsFriend(name)
-		for i=1, GetNumFriends(), 1 do
-			if GetFriendInfo(i) == name then
+		for i = 1, C_FriendList.GetNumFriends() do
+			if C_FriendList.GetFriendInfoByIndex(i).name == name then
 				return true
 			end
 		end

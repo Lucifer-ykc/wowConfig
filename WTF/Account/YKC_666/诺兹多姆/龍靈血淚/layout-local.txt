@@ -1,11 +1,4 @@
 Version: 1
-Frame: wFlaresMain
-FrameLevel: 1
-Anchor: BOTTOMLEFT
-X: 265
-Y: 24
-W: 190
-H: 30
 Frame: TargetFrame
 FrameLevel: 1
 Anchor: TOP
@@ -83,3 +76,10 @@ X: 0
 Y: -20
 W: 165
 H: 262
+Frame: wFlaresMain
+FrameLevel: 1
+Anchor: BOTTOMLEFT
+X: 265
+Y: 24
+W: 190
+H: 30

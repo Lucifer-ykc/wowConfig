@@ -19,7 +19,7 @@ Grail._When = function(callbackType, questId)
 	questId = tonumber(questId)
 	if nil ~= questId then
 		local hour, minute = GetGameTime()
-		local date = C_Calendar.GetDate();
+		local date = C_DateAndTime.GetCurrentCalendarTime();
 		local month, day, year = date.month, date.monthDay, date.year
 		GrailWhenPlayer['when'][questId] = string.format("%4d-%02d-%02d %02d:%02d", year, month, day, hour, minute)
 		if bit.band(Grail:CodeType(questId), bitMask) > 0 then

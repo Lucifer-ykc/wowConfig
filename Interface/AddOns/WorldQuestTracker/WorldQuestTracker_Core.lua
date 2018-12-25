@@ -40,7 +40,6 @@ local GetQuestLogRewardMoney = GetQuestLogRewardMoney
 local GetQuestTagInfo = GetQuestTagInfo
 local GetNumQuestLogRewards = GetNumQuestLogRewards
 local GetQuestInfoByQuestID = C_TaskQuest.GetQuestInfoByQuestID
-local GetQuestTimeLeftMinutes = C_TaskQuest.GetQuestTimeLeftMinutes
 
 local MapRangeClamped = DF.MapRangeClamped
 local FindLookAtRotation = DF.FindLookAtRotation
@@ -1565,7 +1564,7 @@ WorldQuestTracker.OnToggleWorldMap = function (self)
 							--GameCooltip:Hide()
 						end,
 						FixedValue = "none",
-						ShowSpeed = 0.05,
+						ShowSpeed = 0.150,
 						Options = function()
 							GameCooltip:SetOption ("MyAnchor", "bottom")
 							GameCooltip:SetOption ("RelativeAnchor", "top")
@@ -1965,10 +1964,10 @@ WorldQuestTracker.OnToggleWorldMap = function (self)
 
 					if (repAmount > 41900) then
 						factionButton:SetAlpha (.75)
-						factionButton.Icon:SetDesaturated (true)
+						--factionButton.Icon:SetDesaturated (true)
 					else
 						factionButton:SetAlpha (1)
-						factionButton.Icon:SetDesaturated (false)
+						--factionButton.Icon:SetDesaturated (false)
 					end
 				end
 				
@@ -2405,7 +2404,7 @@ WorldQuestTracker.OnToggleWorldMap = function (self)
 			
 				--if framerate is low, update more quests at the same time
 				local frameRate = GetFramerate()
-				local amountToUpdate = 1 + (not WorldQuestTracker.db.profile.hoverover_animations and 5 or 0)
+				local amountToUpdate = 2 + (not WorldQuestTracker.db.profile.hoverover_animations and 5 or 0)
 				
 				if (frameRate < 20) then
 					amountToUpdate = amountToUpdate + 3

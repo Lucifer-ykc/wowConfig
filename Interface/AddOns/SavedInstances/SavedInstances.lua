@@ -555,7 +555,7 @@ end
 -- convert local time -> server time: add this value
 -- convert server time -> local time: subtract this value
 function addon:GetServerOffset()
-  local serverDate = C_Calendar.GetDate()
+  local serverDate = C_DateAndTime.GetCurrentCalendarTime()
   local serverDay, serverWeekday, serverMonth, serverMinute, serverHour, serverYear = serverDate.monthDay, serverDate.weekday, serverDate.month, serverDate.minute, serverDate.hour, serverDate.year
   local localDay = tonumber(date("%w")) -- 0-based starts on Sun
   local localHour, localMinute = tonumber(date("%H")), tonumber(date("%M"))
@@ -1721,7 +1721,7 @@ local function ShowQuestTooltip(cell, arg, ...)
       SecondsToTime(reset - time()))
   end
   local ql = {}
-  local zonename
+  local zonename, id
   for id,qi in pairs(t.Quests) do
     if (not isDaily) == (not qi.isDaily) then
       zonename = qi.Zone and qi.Zone.name or ""
@@ -1730,7 +1730,8 @@ local function ShowQuestTooltip(cell, arg, ...)
   end
   table.sort(ql)
   for _,e in ipairs(ql) do
-    local id = tonumber(e:match("# (%d+)"))
+    zonename, id = e:match("(.*) # (%d+)")
+    id = tonumber(id)
     local qi = t.Quests[id]
     local line = indicatortip:AddLine()
     local link = qi.Link
@@ -2211,7 +2212,7 @@ end
 function core:OnInitialize()
   local versionString = GetAddOnMetadata(addonName, "version")
   --[===[@debug@
-  if versionString == "8.0.7" then
+  if versionString == "8.0.8" then
     versionString = "Dev"
   end
   --@end-debug@]===]
@@ -3724,6 +3725,13 @@ function core:ShowTooltip(anchorframe)
           if DailyInfo.name then
             if(not show[DailyInfo.dayleft] or show[DailyInfo.dayleft] == L["Emissary Missing"]) then
               show[DailyInfo.dayleft] = DailyInfo.name
+            elseif (
+              (not show[DailyInfo.dayleft]:find("/")) and
+              (show[DailyInfo.dayleft] ~= DailyInfo.name) and
+              (DailyInfo.name ~= L["Emissary Missing"])
+            ) then
+              -- shows both factions emissary name
+              show[DailyInfo.dayleft] = show[DailyInfo.dayleft] .. " / " .. DailyInfo.name
             end
             addColumns(columns, toon, tooltip)
           end
@@ -3731,16 +3739,16 @@ function core:ShowTooltip(anchorframe)
       end
     end
 
-	if not firstcategory and addon.db.Tooltip.CategorySpaces then
-          addsep()
-	end
-	if addon.db.Tooltip.ShowCategories then
-		tooltip:AddLine(YELLOWFONT .. L["Emissary Quests"] .. FONTEND)
-	end
+    if not firstcategory and addon.db.Tooltip.CategorySpaces then
+            addsep()
+    end
+    if addon.db.Tooltip.ShowCategories then
+      tooltip:AddLine(YELLOWFONT .. L["Emissary Quests"] .. FONTEND)
+    end
     for dayleft = 0 , 2 do
       if show[dayleft] then
         local showday = show[dayleft]
-			show[dayleft] = tooltip:AddLine(GOLDFONT .. showday .. " (+" .. dayleft .. " " .. L["Day"] .. ")" .. FONTEND)
+			  show[dayleft] = tooltip:AddLine(GOLDFONT .. showday .. " (+" .. dayleft .. " " .. L["Day"] .. ")" .. FONTEND)
       end
     end
     for toon, t in cpairs(addon.db.Toons, true) do

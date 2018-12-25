@@ -19,14 +19,23 @@ BigFootBot_Version = {
 }
 BigFootBot_Info = nil
 PlayersDB = {
-	["被追逐的宝贝:熊猫酒仙"] = {
-		["race"] = 19,
-		["name"] = "被追逐的宝贝",
-		["guild"] = "驾龄二十年以上",
+	["教父丨乌瑟尔:影之哀伤"] = {
+		["race"] = 6,
+		["name"] = "教父丨乌瑟尔",
+		["guild"] = "灬丨以傷誅戰丨灬",
 		["level"] = 120,
 		["gender"] = 2,
-		["class"] = 8,
-		["server"] = "熊猫酒仙",
+		["class"] = 3,
+		["server"] = "影之哀伤",
+	},
+	["采花姑娘:罗宁"] = {
+		["race"] = 7,
+		["name"] = "采花姑娘",
+		["guild"] = "翱翔",
+		["level"] = 120,
+		["gender"] = 3,
+		["class"] = 4,
+		["server"] = "罗宁",
 	},
 }
 UtilDB = {

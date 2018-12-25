@@ -197,7 +197,7 @@ local options = {
 -- check
 local setEnabled = false
 local function CheckEventActive()
-	local date = C_Calendar.GetDate()
+	local date = C_DateAndTime.GetCurrentCalendarTime()
 	local month, day, year = date.month, date.monthDay, date.year
 
 	local monthInfo = C_Calendar.GetMonthInfo()
@@ -290,7 +290,7 @@ function HallowsEnd:OnEnable()
 		end
 	end
 
-	local date = C_Calendar.GetDate()
+	local date = C_DateAndTime.GetCurrentCalendarTime()
 	C_Calendar.SetAbsMonth(date.month, date.year)
 
 	C_Timer_NewTicker(15, CheckEventActive)
